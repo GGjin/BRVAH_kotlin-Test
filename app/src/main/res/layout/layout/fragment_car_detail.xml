@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/detail_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/detail_state_img"
+                    android:textColor="@color/text_black"
+                    android:textSize="15sp"
+                    tools:text="路虎·揽胜 2017新款 6.0L 百年爆款设计者纪念款"/>
+
+                <ImageView
+                    android:id="@+id/detail_state_img"
+                    android:layout_width="57dp"
+                    android:layout_height="57dp"
+                    android:layout_alignParentRight="true"
+                    tools:src="@drawable/ic_car_state_already"/>
+
+                <TextView
+                    android:id="@+id/detail_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detail_title"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_s"
+                    tools:text="宣传标题：进口2017年新款，纪念款"/>
+
+                <TextView
+                    android:id="@+id/detail_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detail_subtitle"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/main_orange"
+                    android:textSize="18sp"
+                    tools:text="¥ 60.88万"/>
+
+                <TextView
+                    android:id="@+id/detail_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/detail_price"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_s"
+                    tools:text="2017年7月     8万公里     已出库"/>
+
+                <TextView
+                    android:id="@+id/detail_vin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detail_time"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_s"
+                    tools:text="车架号：LFV3A24GXD31526277"/>
+
+                <TextView
+                    android:id="@+id/detail_stock_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detail_vin"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/text_size_s"
+                    tools:text="库龄:42/45天"/>
+
+
+                <ImageView
+                    android:id="@+id/detail_sale_way"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/detail_state_img"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="10dp"
+                    tools:src="@drawable/ic_car_wholesale"/>
+
+                <TextView
+                    android:id="@+id/detail_visitor_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/detail_sale_way"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/visitor_text_bg"
+                    android:padding="2dp"
+                    android:textColor="@color/white"
+                    android:textSize="9sp"
+                    tools:text="浏览：1000"/>
+
+                <ImageView
+                    android:id="@+id/detail_authentication_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/detail_visitor_num"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_authentication"/>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/detail_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detail_stock_day"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="10dp"/>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:divider="@drawable/divider_ll_grey_v"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/same_series_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_orange"
+                        tools:text="100"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:text="同系在售"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/same_series_already_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_orange"
+                        tools:text="100"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:text="同系已售"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_ll_orange"
+                android:showDividers="beginning">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:text="特卖描述"
+                    android:textColor="@color/text_black"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/special_sale_describe"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:textColor="@color/text_black"
+                android:textSize="12sp"
+                tools:ignore="RtlHardcoded"
+                tools:text="特价大优惠，赠送500加油卡"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_ll_orange"
+                android:showDividers="beginning">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:text="新车价"
+                    android:textColor="@color/text_black"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_ll_grey_v"
+                android:dividerPadding="6dp"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <include
+                    android:id="@+id/novice_guide_price"
+                    layout="@layout/item_car_info"/>
+
+                <include
+                    android:id="@+id/novice_dutiable_value"
+                    layout="@layout/item_car_info"/>
+
+                <include
+                    android:id="@+id/purchase_tax"
+                    layout="@layout/item_car_info"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_ll_orange"
+                android:showDividers="beginning">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:text="标价"
+                    android:textColor="@color/text_black"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_ll_grey_v"
+                android:dividerPadding="6dp"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <include
+                    android:id="@+id/exhibition_hall_price"
+                    layout="@layout/item_car_info"/>
+
+                <include
+                    android:id="@+id/network_price"
+                    layout="@layout/item_car_info"/>
+
+                <include
+                    android:id="@+id/not_final_price"
+                    layout="@layout/item_car_info"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_ll_orange"
+                android:showDividers="beginning">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:text="底价"
+                    android:textColor="@color/text_black"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:text="销售底价    "
+                    android:textColor="@color/text_grey"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/sales_reserve_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_black"
+                    android:textSize="12sp"
+                    tools:text="26.20万"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_ll_grey_v"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <include
+                    android:id="@+id/manufacture_date"
+                    layout="@layout/item_car_info"/>
+
+                <include
+                    android:id="@+id/appearance_color"
+                    layout="@layout/item_car_info"/>
+
+                <include
+                    android:id="@+id/interior_color"
+                    layout="@layout/item_car_info"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/main_bg"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_ll_grey_v"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <include
+                    android:id="@+id/body_type"
+                    layout="@layout/item_car_info"/>
+
+                <include
+                    android:id="@+id/displacement"
+                    layout="@layout/item_car_info"/>
+
+                <include
+                    android:id="@+id/gearbox"
+                    layout="@layout/item_car_info"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/main_bg"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_ll_grey_v"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <include
+                    android:id="@+id/fuel_type"
+                    layout="@layout/item_car_info"/>
+
+                <include
+                    android:id="@+id/emission_standards"
+                    layout="@layout/item_car_info"/>
+
+                <include
+                    android:id="@+id/regular_maintenance"
+                    layout="@layout/item_car_info"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/main_bg"/>
+
+            <include
+                android:id="@+id/test_report"
+                layout="@layout/row_list_accessible"/>
+
+            <include
+                android:id="@+id/vehicle_warranty"
+                layout="@layout/row_list_subtext"/>
+
+            <include
+                android:id="@+id/defect_description"
+                layout="@layout/row_list_subtext"/>
+
+            <include
+                android:id="@+id/sale_point_description"
+                layout="@layout/row_list_subtext"/>
+
+            <include
+                android:id="@+id/mortgage_description"
+                layout="@layout/row_list_subtext"/>
+
+            <include
+                android:id="@+id/vehicle_accessories"
+                layout="@layout/row_list_subtext"/>
+
+            <include
+                android:id="@+id/cost_description"
+                layout="@layout/row_list_subtext"/>
+
+            <include
+                android:id="@+id/supplementary_description"
+                layout="@layout/row_list_subtext"/>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:visibility="invisible"
+        app:layout_behavior="@string/scale_up_show_behavior"
+        app:layout_scrollFlags="scroll|enterAlways|snap"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

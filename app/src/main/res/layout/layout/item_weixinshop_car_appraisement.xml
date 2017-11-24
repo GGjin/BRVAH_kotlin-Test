@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/home_weixin_shop"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingStart="30dp"
+        android:paddingTop="13dp"
+        tools:ignore="RtlSymmetry">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_weixin_shop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/weixin_shop"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_car_announcement"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingEnd="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="13dp"
+        tools:ignore="RtlSymmetry">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_car_appraisement"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/car_appraisement"/>
+
+    </LinearLayout>
+
+</LinearLayout>

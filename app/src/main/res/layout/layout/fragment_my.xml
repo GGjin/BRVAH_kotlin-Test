@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <!--<android.support.design.widget.TabLayout-->
+    <!--android:id="@+id/tab"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:tabBackground="@color/main_orange"-->
+    <!--app:tabIndicatorHeight="0dp"-->
+    <!--app:tabSelectedTextColor="@color/blue"-->
+    <!--app:tabTextColor="@color/white"/>-->
+
+    <LinearLayout
+        android:id="@+id/tab_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main_orange"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.anpxd.ewalker.view.ColorTrackTextView
+            android:id="@+id/tab_message"
+            style="@style/my_tab_text"
+            app:changeColor="@color/blue"
+            android:text="@string/message"
+            />
+
+        <com.anpxd.ewalker.view.ColorTrackTextView
+            android:id="@+id/tab_statistics"
+            style="@style/my_tab_text"
+            app:changeColor="@color/blue"
+            android:text="@string/statistics"
+            />
+
+        <com.anpxd.ewalker.view.ColorTrackTextView
+            android:id="@+id/tab_setting"
+            style="@style/my_tab_text"
+            app:changeColor="@color/blue"
+            android:text="@string/setting"
+            />
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

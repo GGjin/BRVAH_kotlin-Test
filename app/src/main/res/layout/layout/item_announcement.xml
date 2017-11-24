@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/ic_home_announcement"/>
+
+    <TextView
+        android:id="@+id/announcement"
+        android:layout_marginLeft="5dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="公告：本周一季度二手车车站即将展开..."
+        android:textSize="13sp"
+        android:layout_weight="1"
+        android:layout_marginStart="5dp"/>
+
+    <ImageView
+        android:layout_width="7dp"
+        android:layout_height="13dp"
+        android:src="@drawable/ic_next"
+        />
+
+</LinearLayout>

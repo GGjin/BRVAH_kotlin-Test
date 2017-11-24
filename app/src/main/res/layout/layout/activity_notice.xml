@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:id="@+id/notice_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:gravity="center"
+        android:textColor="@color/text_black"
+        android:textSize="18sp"
+        tools:text="标题是什么什么"/>
+
+    <TextView
+        android:id="@+id/notice_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="right"
+        android:textColor="@color/text_grey"
+        android:textSize="11sp"
+        tools:ignore="RtlHardcoded,SmallSp"
+        tools:text="2017年8月29日 17:55"/>
+
+    <TextView
+        android:id="@+id/notice_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_size"
+        tools:text="      库存消息等一些消息等新闻xxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxx统计消息库存消息等一些消息等新闻xxxxxxx
+xxxxxxxxxxxx统计消息库存消息等一些消息等新闻xxxxxxx
+xxxxxxxxxxxx统计消息库存消息等一些消息等新闻xxxxxxx
+xxxxxxxxxxxx统计消息"/>
+</LinearLayout>

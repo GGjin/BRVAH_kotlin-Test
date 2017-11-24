@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/state_photo"
+        layout="@layout/row_list_switch"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <include
+        android:id="@+id/state_all"
+        layout="@layout/row_list_text"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="24dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:textColor="@color/text_black1"
+            android:text="@string/detection_state"/>
+    </LinearLayout>
+
+    <include android:id="@+id/wait_initial_survey"
+             layout="@layout/row_list_text"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <include android:id="@+id/already_initial_survey"
+             layout="@layout/row_list_text"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <include android:id="@+id/already_certification"
+             layout="@layout/row_list_text"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <include
+        android:id="@+id/fail_certification"
+        layout="@layout/row_list_text"/>
+</LinearLayout>

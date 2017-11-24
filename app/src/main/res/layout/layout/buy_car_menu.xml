@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal">
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/sort"
+            style="@style/buy_car_menu_ll"
+            android:layout_weight="1.3">
+
+            <TextView
+                style="@style/buy_car_menu_text"
+                tools:text="默认排序"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_soild_triangle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/brand"
+            style="@style/buy_car_menu_ll"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/buy_car_menu_text"
+                tools:text="品牌"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_soild_triangle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/price"
+            style="@style/buy_car_menu_ll"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/buy_car_menu_text"
+                tools:text="价格"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_soild_triangle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/state"
+            style="@style/buy_car_menu_ll"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/buy_car_menu_text"
+                tools:text="状态"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_soild_triangle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/screen"
+            style="@style/buy_car_menu_ll"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/buy_car_menu_text"
+                tools:text="筛选"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_soild_triangle"/>
+        </LinearLayout>
+
+</LinearLayout>
